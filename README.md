@@ -52,6 +52,7 @@ try {
 	// Audio was not stopped, continue...
 } catch {
 	// Audio was stopped prematurely
+	// which is what will happen in this example
 }
 ```
 
@@ -60,6 +61,7 @@ try {
 ```javascript
 import {Player} from '@vdegenne/play-sound';
 const player = new Player({player: 'ffplay'});
+
 player.play('./assets/test.mp3', {
 	ffplay: ['-nodisp', '-autoexit'],
 });
