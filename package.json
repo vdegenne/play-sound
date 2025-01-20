@@ -1,6 +1,6 @@
 {
 	"name": "@vdegenne/play-sound",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"type": "module",
 	"description": "Play audio files by shelling out to available audio tool.",
 	"scripts": {

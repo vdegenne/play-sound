@@ -42,7 +42,7 @@ export class Player {
 	 */
 	// #urlRegex = /^(https?|ftp):\/\/[^\s\/$.?#].[^\s]*$/i;
 
-	constructor(opts: Partial<PlayOpts>) {
+	constructor(opts: Partial<PlayOpts> = {}) {
 		this.#opts = Object.assign({}, defaultOptions, opts);
 	}
 
