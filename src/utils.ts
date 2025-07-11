@@ -1,10 +1,22 @@
 import {execSync} from 'child_process';
 import {platform} from 'os';
-import {quote} from 'shell-quote';
+// import {quote} from 'shell-quote';
+
+function simpleQuote(args: string[]): string {
+	return args
+		.map((arg) => {
+			// Escape single quotes by closing, adding \' and reopening quotes
+			if (/[^A-Za-z0-9_/:=-]/.test(arg)) {
+				return `'${arg.replace(/'/g, `'\\''`)}'`;
+			}
+			return arg;
+		})
+		.join(' ');
+}
 
 function isExec(command: string): boolean {
 	try {
-		execSync(quote(command.split(' ')), {stdio: 'ignore'});
+		execSync(simpleQuote(command.split(' ')), {stdio: 'ignore'});
 		return true;
 	} catch {
 		return false;

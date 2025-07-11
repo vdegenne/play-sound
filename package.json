@@ -1,6 +1,6 @@
 {
 	"name": "@vdegenne/play-sound",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"type": "module",
 	"description": "Play audio files by shelling out to available audio tool.",
 	"scripts": {
@@ -21,12 +21,8 @@
 			]
 		}
 	},
-	"dependencies": {
-		"shell-quote": "^1.8.3"
-	},
 	"devDependencies": {
 		"@types/node": "^24.0.13",
-		"@types/shell-quote": "^1.7.5",
 		"expect.js": "^0.3.1",
 		"mocha": "^11.7.1",
 		"mock-fs": "^5.5.0",
