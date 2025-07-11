@@ -1,6 +1,6 @@
 {
 	"name": "@vdegenne/play-sound",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"type": "module",
 	"description": "Play audio files by shelling out to available audio tool.",
 	"scripts": {
@@ -36,7 +36,7 @@
 	],
 	"exports": {
 		".": {
-			"default": "./lib/index.js",
+			"import": "./lib/index.js",
 			"types": "./lib/index.d.ts"
 		}
 	},
