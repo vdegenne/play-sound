@@ -13,4 +13,4 @@ promise
 		console.log('stopped');
 	});
 
-process.kill('SIGTERM');
+// process.kill('SIGTERM');
